@@ -1,0 +1,27 @@
+*{ margin:0; paddin:0;}
+body{ font: 16px Georgia, serif}
+
+#page-wrap{ margin: 2% auto; color:white;}
+#page-wrap > .main{ border: 1px solid #999; padding: 1%;
+                    margin-bottom: 1px; color:black;
+}
+
+section > div { padding: 20px}
+header, nav, section {background: #eee; text-align: center;}
+footer{ background: #eeeeee; text-align: center;}
+footer a{margin: 0px 10px 0px 0px;}
+nav span{margin: 0px 10px 0px 0px;}
+
+#informacion{padding-top: 10px;
+    text-align: center;
+}
+#imagen {
+    text-align: center;
+    padding: 10px;
+}
+
+#tabla {
+    display: inline-block;
+}
+
+#ErrorMsgs           { color: #f61; font-size: smaller}

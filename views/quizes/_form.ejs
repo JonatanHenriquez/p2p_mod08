@@ -1,0 +1,30 @@
+<label for="preg" class="rem">Pregunta:</label>
+<input type="text" id="preg" name="quiz[pregunta]" value="<%= quiz.pregunta %>"/> <p>
+    <!-- Con quiz[pregunta]
+    indicamos que se envia la propiedad pregunta de quiz es
+    decir solo en el body tendriamos un objeto de tipo quiz con dos propiedades-->
+    <label for="resp" class="rem">Respuesta:</label>
+    <input type="text" id="resp" name="quiz[respuesta]" value="<%= quiz.respuesta %>"/><p>
+<div id="seleccion">
+    <label for="tema" id="theme">Tema:</label>
+    <p></p>
+    <select name="quiz[tema]">
+        <%
+        for( var i in tema ) {
+            var selected = "";
+            if ( quiz.tema === tema[i] ) {<!--Verifica si posee tema si es asi le pone selected a la hora de editar-->
+                selected = "selected";
+            }
+        %>
+        <option value="<%= tema[i] %>" <%= selected %>><%= tema[i] %></option>
+        <%
+        }
+        %>
+    </select>
+</div>
+
+<p></p></br>
+<a href="/quizes">
+    <button type="button">Cancelar</button>
+</a>
+<input type="submit" value="Salvar">
